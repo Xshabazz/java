@@ -1,0 +1,37 @@
+escape sequences 
+
+\n  newline     advances the cursor to the next line for printing 
+\t  horizontal tab   causes the cursor to skip over the next tab stop 
+\b backspace   cuases the cursor to back up or move left one position 
+\r return   causes the cursor to go to the beginning of the current line, not the next line 
+\\ backslash   causes a backslash to be printed 
+\' single quote to be printed 
+\" double quote to be printed 
+
+--
+
+Primitive data types 
+
+byte - 1 byte - Integers in the range of -128 to +127
+short - 2 bytes - Integers in the` range of -32,768 to +32,767
+int - 4 bytes - Integers in the range of -2,147,483,648 to +2,147,483,647
+long - 8 bytes - Integers in the range of -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807
+float -  4 bytes - Floating-point numbers in the range of ‡3.4 X 10-38 to ‡3.4 X 1038. with 7 digits of accuracy
+double -  8 bytes - Floating-point numbers in the range of ‡1.7 X 10-308 to ‡1.7 × 10308 with 15 digits of accuracy
+
+--
+JOption pane 
+
+import - javax.swing.JOptionPane;
+JOptionPane.showMessageDialog(null,"message");
+JOptionPane.showInputDialog("message");
+
+---
+format specifier 
+
+System.out.printf("$%-,8.2f",doubleOne) = $32,666.80 - currency format 
+System.out.printf("%-2d",intOne) - left justify 
+System.out.printf("%02.2f",doubleOne) - leading zeros, minimum field 2, round to two decimal
+System.out.printf("$%,.2f",doubleOne) - minimum field 
+
+String output = String.format("your pay is $%-,.2f",doubleOne);
