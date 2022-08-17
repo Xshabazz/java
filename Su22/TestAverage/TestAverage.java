@@ -11,8 +11,6 @@ public class TestAverage {
         double one, two, three; // test scores 
         
         Scanner keyboard = new Scanner(System.in);
-        Random ex = new Random();
-
 
         System.out.println("What is the score of test 1 ?");
         one = keyboard.nextDouble();

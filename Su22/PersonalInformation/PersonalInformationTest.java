@@ -42,7 +42,7 @@ public class PersonalInformationTest {
         System.out.println("What is your Phone Number ? ");
         exTwo.setNumber(keyboard.nextLong());
 
-//display code 
+//display output with formatting
 
 String colOne = "Name :", 
         colTwo = "Address :", 

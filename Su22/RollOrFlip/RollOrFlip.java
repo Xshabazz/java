@@ -2,7 +2,7 @@ public class RollOrFlip {
     private boolean flip;
     private int roll;
     private String head = "Heads",
-    tail = "tails";
+    tail = "Tails";
 
     public void flip(boolean flip) {
         this.flip = flip;

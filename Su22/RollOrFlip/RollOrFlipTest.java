@@ -17,8 +17,9 @@ public class RollOrFlipTest {
         resultString = JOptionPane.showInputDialog("Do you want to flip a coin or roll a dice ? ");
         resultString = resultString.toUpperCase();
         resultChar = resultString.charAt(0);
-        cf.flip(ex.nextBoolean());
-        cf.roll(ex.nextInt(5)+1);
+
+        cf.flip(ex.nextBoolean());//pass a random bool for a coin flip
+        cf.roll(ex.nextInt(5)+1);//pass a random int 1-6 for a dice roll 
         if(resultChar == 'F'){System.out.println(cf.getCF());}
 
 

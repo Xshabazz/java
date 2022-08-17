@@ -6,7 +6,7 @@ public class SalesCommission {
             pay; // amount that the employee owes or is owed
     String err = "blank";
 
-    public Classy(double s,//pass the amount of sales the employee made
+    public SalesCommission(double s,//pass the amount of sales the employee made
                     double a)//pass the amount the employee would like in advance
     {
         sales = s;
@@ -40,7 +40,7 @@ public class SalesCommission {
             rate = 0.16;
         }
         else{
-             err = "error in setRate";
+             err = "Error";
         }
     }
     public String getError()

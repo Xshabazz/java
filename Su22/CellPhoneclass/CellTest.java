@@ -27,7 +27,7 @@ public class CellTest {
         //create a table 
         System.out.printf("%15s | %15s | %15s\n",colOne,colTwo,colThree);
         /*
-        System.out.printf("%15s | %15s | %,15.2f\n",.getManufact(),.getModel(),.getPrice());
+        Display formatted results
         */
         System.out.printf("%15s | %15s | $%,15.2f\n"
                 ,ex.getManufact(),ex.getModel(),ex.getPrice());

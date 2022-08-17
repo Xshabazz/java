@@ -19,19 +19,30 @@ public class EmployeeSalary {
                 floatSix = 0.0F;
         final double MONTHS = 12.0;
 
-        //collect employee names and monthly wages
+//collect employee names and monthly wages
+        //employee 1
         stringOne = JOptionPane.showInputDialog("Enter employee 1 name");
         floatOne = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 1 monthly salary"));
+
+        //employee 2
         stringTwo = JOptionPane.showInputDialog("Enter employee 2 name");
-        floatTwo = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 2 monthly salary"));
+        floatTwo = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 2 monthly pay."));
+
+        //employee 3 
         stringThree = JOptionPane.showInputDialog("Enter employee 3 name");
-        floatThree = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 3 monthly salary"));
+        floatThree = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 3 monthly pay."));
+
+        //employee 4
         stringFour = JOptionPane.showInputDialog("Enter employee 4 name");
-        floatFour = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 4 monthly salary"));
+        floatFour = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 4 monthly pay."));
+
+        //employee 5 
         stringFive = JOptionPane.showInputDialog("Enter employee 5 name");
-        floatFive = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 5 monthly salary"));
+        floatFive = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 5 monthly pay."));
+
+        //employee 6 
         stringSix = JOptionPane.showInputDialog("Enter employee 6 name");
-        floatSix = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 6 monthly salary"));
+        floatSix = Float.parseFloat(JOptionPane.showInputDialog("Enter employee 6 monthly pay."));
         //multiply employee monthly salary by final constant double decimal
         floatOne *= (float)(MONTHS);
         floatTwo *= (float)(MONTHS); 
