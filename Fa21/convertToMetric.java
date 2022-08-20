@@ -4,21 +4,16 @@ public class convertToMetric
 
 	public convertToMetric()
 	{
-
 		standard = 0.0;
-
 	}
 	public convertToMetric(double length)
-		{
+	{
 		standard = length;
-
-		}
-
-
+	}
 
 	public void setStandard(double length)
 	{
-	standard = length;
+		standard = length;
 	}
 
 
@@ -32,14 +27,19 @@ public class convertToMetric
 
 	public double getMeters()
 	{
-		return standard * .3408;
+		return standard * .3048;
 	}
 
 	public double getCentimeters()
 	{
-		return standard * 3408;
+		return standard * 3048;
 	}
-
+	public double getMiles(){
+		return (standard/5280);
+	}
+	public double getKilometers(){
+		return (standard * .3048)/1000; 
+	}
 
 
 

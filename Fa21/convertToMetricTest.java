@@ -4,34 +4,23 @@ public class convertToMetricTest
 
 {
 
-public static void main(String [] args)
+	public static void main(String [] args)
 
 	{
 		Scanner keyboard = new Scanner(System.in);
-		convertToMetric This = new convertToMetric();
-
-			double meter;
-			double centimeter;
-
-
-
+		
+			double standard = 0.0;
 
 		System.out.println("How many feet ?");
-		double length = keyboard.nextDouble();
+		//pass the length to the constructor
 
-		This.setStandard(length);
-		double standard = length;
+		convertToMetric test = new convertToMetric(keyboard.nextDouble());
 
-		centimeter = This.getCentimeters();
-		meter = This.getMeters();
-
-
-		System.out.println("Length in feet : " + standard );
-		System.out.println("Length in meters : " + meter );
-		System.out.println("Length in centimeters " + centimeter );
-
-
-
+		System.out.println("Length in feet : " + String.format("%,.2f",test.getStandard()) );
+		System.out.println("Length in Miles : " + String.format("%,.2f",test.getMiles()) );
+		System.out.println("Length in Kilometers : " + String.format("%,.2f",test.getKilometers()) );
+		System.out.println("Length in Meters : " + String.format("%,.2f",test.getMeters()) );
+		System.out.println("Length in centimeters : " + String.format("%,.2f",test.getCentimeters()) );
 
 	}
 

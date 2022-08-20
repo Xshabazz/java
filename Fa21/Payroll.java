@@ -1,9 +1,9 @@
 public class Payroll
 	{
-		private String employeeId;
-		private String employeeName;
-		private double employeeWage;
-		private double employeeHours;
+		private String employeeId ;
+		private String employeeName ;
+		private double employeeWage ;
+		private double employeeHours ;
 
 		public Payroll()
 		{
@@ -11,33 +11,33 @@ public class Payroll
 			employeeId = "No ID";
 			employeeName = "No Name";
 			employeeWage = 0.0;
-			employeeHours 0.0;
+			employeeHours = 0.0;
 
 		}
 		public Payroll(String empID, String empNa, double empW, double empH)
 			{
-				employeeID = empID;
+				employeeId = empID;
 				employeeName = empNa;
 				employeeWage = empW;
 				employeeHours = empH;
 			}
 
-		public void setEmployeeID(String empID);
+		public void setEmployeeId(String empID)
 			{
-			employeeID = empID;
+			employeeId = empID;
 			}
 
-		public void setEmployeeName(String empNa);
+		public void setEmployeeName(String empNa)
 			{
 			employeeName = empNa;
 			}
 
-		public void setEmployeeWage(double empW);
+		public void setEmployeeWage(double empW)
 			{
 			employeeWage = empW;
 			}
 
-		public void setEmployeeHours(String empH);
+		public void setEmployeeHours(double empH)
 			{
 			employeeHours = empH;
 			}
@@ -45,28 +45,28 @@ public class Payroll
 		public String getEmployeeId()
 
 		{
-		return employeeID();
+		return employeeId;
 		}
 
 		public String getEmployeeName()
 		{
-		return employeeName();
+		return employeeName;
 		}
 
 		public double getEmployeeWage()
 		{
-		return employeeWage();
+		return employeeWage;
 		}
 
 		public double getEmployeeHours()
 		{
-		return employeeHours();
+		return employeeHours;
 		}
 
 		public void printInfo()
 
 			{
-				System.out.println("Employee ID: " + employeeID);
+				System.out.println("Employee ID: " + employeeId);
 				System.out.println("Employee Name: " + employeeName);
 				System.out.println("Employee Wage: " + employeeWage);
 				System.out.println("Hours Worked: " + employeeHours);

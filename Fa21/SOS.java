@@ -1,25 +1,29 @@
-public class SOS
+public class SpeedSound
 {
-	private int distance;
+	private double distance;
 
-	public SOS(int distance)
+	public SpeedSound()
 	{
 		distance = 0.0;
 	}
-
-	public void setDistance(int distance)
+	public SpeedSound(double standard)
 	{
-		distance = 0.0;
+		distance = standard;
 	}
-	public int getSpeedInAir()
+
+	public void setDistance(double distance)
+	{
+		distance = standard;
+	}
+	public double getSpeedInAir()
 	{
 		return distance / 1100;
 	}
-	public int getSpeedInWater()
+	public double getSpeedInWater()
 	{
 		return distance / 4900;
 	}
-	public int getSpeedInSteel()
+	public double getSpeedInSteel()
 	{
 		return distance / 16400;
 	}
